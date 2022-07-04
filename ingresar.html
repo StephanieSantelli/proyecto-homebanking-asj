@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ingresar</title>
+    <link rel="stylesheet" href="css/crear_usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <main class="main-registro">
+        <div class="bloque-visual">
+            <h1> BIENVENIDO </h1><br>
+            <form action="https://postman-echo.com/post" method="post">
+                <label for="usuario"> Usuario: </label>
+                <input id="usuario" type="number" maxlength="25" placeholder="  Su usuario es su DNI" name="usuario"
+                    required>
+                <br> <br>
+                <label for="pass-ingreso">Contraseña: </label>
+                <input id="pass-ingreso" type="password"
+                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="pass-ingreso"
+                    placeholder="  Ingrese su contraseña" required>
+
+                <p id="contras"> (La contraseña debe contener como mínimo 8 caracteres, de los cuales al menos: <br> una mayúscula, un número, un carácter especial y minusculas)</p>
+                <br><br>
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" checked="checked" name="remember">
+                    <label id="recordarme" for="remenber"><span>Recordarme</span></label>
+                    <br> <br>
+                </div>
+                <div>
+                    <button  type="submit" class="boton ingresar">Ingresar</button><br><br>
+                    <p id="olvido-contrasenia">¿Olvidó su contraseña? haga click <a href="olvido_contras.html">aquí</a></p><br>
+                    <p id="no-registrado">¿No está registrado? haga click <a href="crear_usuario.html">aquí</a></p><br>
+                </div>
+            </form>
+            <div class="aviso-token">
+                <img width="25" src="https://cdn4.iconfinder.com/data/icons/essentials-72/24/008_-_Lock-256.png"
+                    alt="icono de candado">
+                <p>Los datos de cuenta, Token de seguridad, <br> los datos de tus tarjetas, de tu tarjeta de coordenadas
+                    <br>y tus claves SON personales. ¡No los compartas!
+                </p>
+
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>

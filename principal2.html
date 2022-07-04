@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bienvenido al Home Banking</title>
+    <link rel="stylesheet" href="css/crear_usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav>
+        <div>
+            <span class="bienvenido">Bienvenido </span>
+            <span class="bienvenido inicio"><a href="principal2.html"> Inicio</a></span>
+        </div>
+        <div>
+            <a href="">
+                <li>Ayuda</li>
+            </a>
+            <a href="contacto.html">
+                <li>Atención al Cliente</li>
+            </a>
+            <!-- poner función que escriba nombre de usuario después del bienvenido. ¿Será con JS?
+        -->
+            <a href="index.html"> <button class="boton salir" type="button"> Salir </button></a>
+        </div>
+    </nav>
+
+    <main class="main-registro">
+        <div id="global">
+            <div id="parcial">
+                <section id="mis-productos">
+                    
+                    <ul>
+                        <li> <h3> Mis Productos</h3></li>
+                        <li>
+                            <h3> Caja de ahorro</h3>
+                            <span>******1234 |</span>
+                            <span class="moneda"> ARG</span>
+                            <span>4.500,00</span>
+
+                        </li>
+                        <li>
+                            <h3> Caja de ahorro</h3>
+                            <span>******9876 |</span>
+                            <span class="moneda"> USD</span>
+                            <span>500,00</span>
+                        </li>
+                        <li>
+                            <h3> Plazo Fijo</h3>
+                            <span>******4567 |</span>
+                            <span class="moneda"> ARG</span>
+                            <span>100.000,00</span>
+                        </li>
+                        <li>
+                            <h3> Tarjeta de Crédito Visa</h3>
+                            <span>**************7654</span>
+
+                        </li>
+                        <li>
+                            <h3> Tarjeta de Crédito Mastercard</h3>
+                            <span>**************3210</span>
+
+                        </li>
+                        <li>
+                            <h3> Mi Administración</h3>
+
+                        </li>
+                    </ul>
+
+
+                </section>
+
+                <section id="tabla">
+                    <table id="movimientos">
+                        <thead>
+                            <tr>
+                                <th id="solapa-h" colspan="3">Últimos Movimientos</th>
+                                <!-- colspan unifica las celdas y los numeros indican cuantas celdas hay que unificar -->
+                            </tr>
+
+                            <tr>
+                                <!-- nombres de las columnas -->
+                                <th class="encabezado">Fecha de la transacción </th>
+                                <th class="encabezado">Descripción</th>
+                                <th class="encabezado">Monto</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>18 Junio 2022</td>
+                                <td>Compra Carrefour presencial</td>
+                                <td>$ 1946,33</td>
+                            </tr>
+                            <tr>
+                                <td>14 Junio 2022</td> <!--  datos de las celdas -->
+                                <td>Fábrica de Pastas</td>
+                                <td>$ 2300,00</td>
+                            </tr>
+                            <tr>
+                                <td>13 Junio 2022</td>
+                                <td>Verdulería</td>
+                                <td>$ 750,20</td>
+                            </tr>
+                            <tr>
+                                <td>11 Junio 2022</td>
+                                <td>Farmacity</td>
+                                <td>$ 6900,00</td>
+                            </tr>
+                            <tr>
+                                <td>11 Junio 2022</td>
+                                <td>Fiambrería Los Hermanos SRL</td>
+                                <td>$ 1450,00</td>
+                            </tr>
+                            <tr>
+                                <td>9 Junio 2022</td>
+                                <td>COTO</td>
+                                <td>$ 11870,94</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </section>
+            </div>
+
+            <div id="slider"></div>
+        </div>
+    </main>
+
+</body>
+
+
+</html>

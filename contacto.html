@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="css/crear_usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <nav>
+        <div>
+            <span class="bienvenido">Bienvenido </span>
+            <span class="bienvenido inicio"><a href="principal2.html"> Inicio</a></span>
+        </div>
+        <div>
+            <a href="">
+            <li>Ayuda</li>
+            </a>
+            <a href="contacto.html">
+                <li>Atención al Cliente</li>
+            </a>
+            <!-- poner función que escriba nombre de usuario después del bienvenido. ¿Será con JS?
+        -->
+            <a href="index.html"> <button class="boton salir" type="button"> Salir </button></a>
+        </div>
+    </nav>
+    <main class="main-registro">
+        <div class="bloque-visual">
+            <h1> Servicio de Atención al Cliente </h1><br>
+            <form action=" " method=" ">
+                <div id="formulario-contacto">
+                    <div id="tipo-consulta">
+                        <label for="tipo-consulta"> Seleccione el motivo:</label>
+
+                        <select id="consulta" name="consulta">
+                            <option value="Cuentas">Cuentas</option>
+                            <option value="TarjetasdeCredito">Tarjetas de Crédito</option>
+                            <option value="TarjetasdeDebito">Tarjetas de Débito</option>
+                            <option value="StopDebit">Stop Debit</option>
+                            <option value="Otro">Otros</option>
+                        </select>
+                        <br>
+                        <label for="comentarios">Comentarios</label> <br>
+                        <textarea name="comentarios" id="comentarios" cols="55" rows="10"
+                            placeholder="Detalle su consulta"></textarea><br>
+                    </div>
+                    <div>
+                        <span>Lo contactaremos por el siguiente medio: </span> <br>
+                        <div id="email-contacto">
+                            <label for="email3"><b>Email: </b></label>
+                            <input id="email3" type="email" name="email3" placeholder="  Ingrese su correo electrónico"
+                                required>
+                        </div>
+                    </div>
+                    <br>
+                    <a href="contacto_rta.html"> <button type="button" class="boton respuesta">Enviar
+                    </button></a><br><br>
+                    <!--  <script src="/JS/main.js"></script> -->
+
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+
+</html>

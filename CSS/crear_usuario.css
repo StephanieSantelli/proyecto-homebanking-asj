@@ -1,0 +1,569 @@
+
+
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Monda', sans-serif;
+}
+
+body{
+    width: 100vw;
+/*     height: 100vh;
+ */    position: relative;  
+ min-height: 100vh;
+ 
+ } 
+
+.main-registro{
+    width: 100vw;
+   /*  height: 100vh;  */
+    background-image: url(../IMAGES/prueba02.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    min-height: 100vh;
+/*     -webkit-filter: blur(1px);
+  -moz-filter: blur(1px);
+  -o-filter: blur(1px);
+  -ms-filter: blur(1px);
+  filter: blur(1px);  */
+ }
+
+.bloque-visual{
+    background-color: azure;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin: auto;
+    border-radius: 40px;
+    opacity: 0.85;
+   /*  border: 2px solid black; */
+    font-family: 'Monda', sans-serif;
+    border: none;
+    outline: none;
+    box-shadow: 0px 2px 5px 1px;
+  
+ }
+.bloque-visual.principal{
+
+    width: 500px;
+    height: 300px;
+
+}
+
+#registro label{
+    width: 250px;
+    text-align: left;
+    display: flex;
+    margin-left: 30px;
+}
+#registro div{
+    display: flex;
+    
+}
+
+
+/* #dnilabel{
+    width: 0;
+    background-color: black;
+} */
+
+#doc{
+    justify-content: space-between;
+    margin-right: 20px;
+}
+
+#documentos{
+    margin-right: 20px;
+}
+.checkbox {
+    display: flex;
+    justify-content: center;
+}
+
+#recordarme{
+    display: flex;
+}
+#recordarme span{
+    text-align: center;
+    width: 200px;
+}
+
+ .bloque-visual h1, p{
+    margin: 5px;
+    margin-bottom: 15px;
+    font-weight: bold;
+    
+ }
+
+ input {
+    border: none;
+/*     border-bottom: 1px black solid; */
+    box-shadow: 2px 2px 3px 1px;
+    width: 600px;
+    display: flex;
+    padding: 15px;
+    margin-right: 50px;
+ }
+
+ #nombre, #apellido, #edad, #email, #password, #psw-repeat, #usuario2, #email2, #email3{
+    margin-bottom: 20px;
+/*     border-radius: 10px;
+ */    width: 65%;
+    height: 30px;
+    
+
+}
+#documentos, #consulta{
+    width: 75px;
+    height: 30px;
+/*     border-radius: 10px;
+ */    border: none;
+    outline: none;
+    box-shadow: 2px 2px 3px 1px;
+
+    
+}
+
+#dni{
+    margin-bottom: 20px;
+/*     border-radius: 10px;
+ */    width: 400px;
+    height: 30px;
+    margin-right: 30px;
+}
+
+label{
+    padding-left: 20px;
+    font-weight: bold;
+    /* display: inline; */
+/*     justify-content: left;
+ */}
+
+
+button{
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    color: white; 
+    font-weight: bold;
+    font-size: 18px;
+    background-color: #3683b2;
+}
+
+.aviso-token{
+    border: 4px solid #3683b2;
+    margin: auto;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    /* width: 500px; */
+}
+
+.aviso-token p{
+    padding: 2px;
+    font-weight: bold;
+    margin: auto 20px;
+}
+#remember{
+    width: 5%;
+    height: 20px;
+    border: none;
+    box-shadow: none;
+    margin: 5px 5px;
+ }
+ #recordarme{
+    font-size: 20px;
+    margin-left: 10px;
+ }
+#preguntaregistro{
+    font-weight: bold;
+    
+}
+#preguntaregistro a, #olvido-contrasenia a, #no-registrado a{
+    color:dodgerblue;
+    transition: all 0.4s ease-out;
+
+
+}
+#preguntaregistro a:hover, #olvido-contrasenia a:hover, #no-registrado a:hover{
+    font-size: 25px;
+
+}
+
+
+
+
+.boton{
+    border: none;
+    box-shadow: 2px 2px 3px 1px;
+    height: 40px;
+    margin: 0 20px;
+    transition: all 0.4s ease-out;
+}
+
+.boton:hover{
+    background-color: dodgerblue;
+    box-shadow: 0 0 0 5px dodgerblue, 2px 2px 2px 0 gray;
+   /*  width: 200px;
+    height: 50px; */
+}
+
+
+#usuario{
+    margin-bottom: 20px;
+/*     border-radius: 10px;
+ */    width: 330px;
+    height: 30px;
+    display: inline;
+ }
+
+ #pass-ingreso {
+    margin-bottom: 20px;
+/*     border-radius: 10px;
+ */    width: 300px;
+    height: 30px;
+    display: inline;
+}
+#contras{
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+    color:gray;
+    margin: 0;
+    padding: 0;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+-webkit-appearance: none;
+margin: 0;}
+
+
+#botones-principales{
+    display: flex;
+    justify-content: center;
+}
+
+#formulario-olvido-contras{
+    display: flex;
+    flex-direction: column;
+align-items: center;  
+  
+}
+#formulario-olvido-contras input{
+    height: 40px;
+    margin-bottom: 50px;
+}
+
+
+#confirma-correo, #confirma-contacto{
+    margin-top: 20px;
+}
+#correo-enviado, #confirmacion-contacto{
+    font-size: 20px; 
+    margin-bottom: 40px
+}
+
+/*TABLA*/
+
+#movimientos{
+    font-family: 'Monda', sans-serif;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse; /* evita q las lineas sean dobles */
+    border-left: none;
+    border-right: none;
+}
+table{
+    border-right: 1px solid #3f5f72;
+    border-left: 1px solid #3f5f72;
+    margin: 10px;
+    width: 700px;
+
+}
+#tabla{
+    background-color:aliceblue;
+    width: 800px;
+
+}
+td{
+    padding: 0 15px;
+}
+
+.encabezado{
+    padding: 0 10px;
+    background-color: #3683b2;
+    color: white;
+}
+
+#solapa-h{
+    padding: 4px 0;
+    background-color: #3f5f72 ;
+    color: white;
+}
+
+/* HOMEBANKING*/
+
+nav{
+    background-color: #3f5f72;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Monda', sans-serif;
+}
+nav div{
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+
+
+nav button{
+    display: flex;
+    justify-content: center;
+   align-items: center;
+  
+}
+.salir{
+    box-shadow: none;
+}
+nav li {
+    display: flex;
+    list-style-type: none;
+    margin: 0 40px;
+    font-weight: bold;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+}
+nav a:hover{
+    transition: all 0.2s ease-out;
+    color: azure;
+}
+
+.bienvenido{
+    display: flex;
+    justify-content: flex-start;
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+/* formulario contacto*/
+
+#email-contacto{
+    display: flex;
+    justify-content: center;
+}
+
+#email-contacto label{
+ margin: 0 10px;  
+ 
+}
+#formulario-contacto{
+    font-weight: bold;
+
+}
+#consulta{
+    width: 150px;
+}
+
+
+#mis-productos{
+    background-color: aliceblue;
+    width: 300px;
+}
+
+#mis-productos ul{
+    list-style-type: none;
+    
+}
+
+#mis-productos ul li{
+    border-bottom: 1px solid #3683b2;
+    padding: 10px;
+}
+
+/*centro de la pagina*/
+
+#global{
+   width: 100%;
+   display: flex;
+}
+#parcial{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 300px;
+    gap: 200px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*  #registro{
+    text-align: justify;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+ } */
+
+/*  #registro{
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+ }
+
+ #registro div{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+ } */
+/* 
+form{
+    display: table;
+
+}
+form div{
+    display: table-row;
+}
+form label{
+    display: table-cell;
+    text-align: left;
+}
+form input{
+    display: table-cell;
+    
+}
+#doc{
+    display: flex;
+    justify-content: space-between;
+}
+#doc input{
+    display: flex;
+} */
+
+
+
+
+/* 
+*{  margin: 0;
+    padding: 0;
+    box-sizing: border-box;}
+
+    
+body{
+    background-color: rgb(222, 190, 252);  */
+/*     display: flex;
+ */  /*   height: 50vh; */
+/*  }  
+#bloque-visual p{
+    padding: 20px;
+}
+
+#crear-usuario{
+    font-family: 'Fascinate', cursive;
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+h1{
+    font-family: 'Fascinate', cursive;
+}
+#main-registro {
+    width: 800px;
+    text-align: center; 
+    background-color:azure;
+    margin: auto;
+    display: flex;
+}
+
+label{
+    margin: 100px;
+    padding: 150px;
+}
+#documentos{
+    height: 30px;
+} 
+#documento{
+    width: 55%;
+}
+
+input{
+    width: 65%;
+    height: 30px;
+}
+
+.recordar{
+    margin: 1px;
+    padding: 1px;
+    
+} 
+#remember{
+   width: 5%;
+    height: 15px;
+}
+
+#aviso-token{
+    border: 4px solid ;
+    margin-left: 200px;
+    margin-right: 200px;
+    padding-top: 15px;
+}   
+
+ */
+
+
+
+
+
+
+
+
+/* #aviso-token{
+    border: 2px solid black; 
+    min-width: 350px;
+    display:grid;
+    grid-template-columns: 1fr 5fr;
+    padding: 10px;
+    margin: 0px 30px;
+}
+#aviso-token p{
+    text-align: center;
+    display: flex;
+}
+#aviso-token img{
+    margin: auto;
+}
+ */

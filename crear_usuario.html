@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Usuario</title>
+    <link rel="stylesheet" href="css/crear_usuario.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <main class="main-registro">
+        <div class="bloque-visual">
+            <h1> BIENVENIDO! </h1>
+            <p id="crear-usuario"> CREÁ TU USUARIO Y COMENZÁ TU EXPERIENCIA</p>
+
+            <form id="registro" action="https://postman-echo.com/post" method="post">
+                <div>
+                    <label for="nombre"> Nombre:  </label>
+                    <input id="nombre" type="text" maxlength="25" placeholder="  Ingrese su nombre" name="nombre"
+                        required> <br>
+                </div>
+                <div>
+                    <label for="apellido"> Apellido: </label>
+                    <input id="apellido" type="text" maxlength="25" placeholder="  Ingrese su apellido" name="apellido"
+                        required><br>
+                </div>
+                <div>
+                    <label for="edad">Edad: </label>
+                    <input id="edad" type="number" min="0" pattern="^[0-9]+" name="edad" placeholder="  Ingrese su edad"
+                        required><br>
+                </div>
+
+                <div id="doc">
+                    <label for="documentos"> Tipo de documento:</label>
+
+                    <select id="documentos" name="documentos">
+                        <option value="DNI">DNI</option>
+                        <option value="LC">LC</option>
+                        <option value="LE">LE</option>
+                        <option value="CI">CI</option>
+                        <option value="Pasaporte">Pasaporte</option>
+                    </select>
+
+                    <!-- <label id="dnilabel"  for="dni"></label> -->
+                    <input id="dni" type="number" min="0" pattern="^[0-9]+" name="dni"
+                        placeholder="  sin espacios ni puntos" required>
+                </div>
+                <div>
+
+                    <label for="email">Email:</label>
+                    <input id="email" type="email" name="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"
+                        placeholder="  Ingrese su coreo electrónico" required><br>
+                </div>
+                <div>
+
+                    <label for="password">Contraseña: </label>
+                    <input id="password" type="password" pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$
+                    " name="password" placeholder="  Ingrese su contraseña" required><br>
+                    <!-- <script>
+                        alert('La contraseña debe contener como mínmo 8 caracteres, de los cuales al menos: <br> una mayúscula, un número, un carácter especial y minusculas.</span><br> <br>');
+                       </script> -->
+                </div>
+                <div>
+
+                    <label for="psw-repeat">Repita contraseña: </label>
+                    <input id="psw-repeat" type="password" placeholder="  Repita contraseña" name="psw-repeat" required>
+                    <br>
+                    <br>
+                </div>
+
+                <!--  <button type="submit">Crear usuario</button> -->
+                <div class="checkbox">
+                    <input id="remember" type="checkbox" checked="checked" name="remember">
+                    <label id="recordarme" for="remenber"><span>Recordarme</span></label>
+                    <br> <br>
+                </div>
+
+
+
+                <button type="submit" class="boton crear">Crear Usuario</button>
+<!--                 <button type="button" class="boton cancelar">Cancelar</button> <br> <br>
+ -->
+
+                <p id="preguntaregistro">¿Ya estás registrado? <a href="ingresar.html">Click aquí</a></p>
+
+
+
+            </form>
+            <div class="aviso-token">
+                <img width="25" src="https://cdn4.iconfinder.com/data/icons/essentials-72/24/008_-_Lock-256.png"
+                    alt="icono de candado">
+                <p>Los datos de cuenta, Token de seguridad, <br> los datos de tus tarjetas, de tu tarjeta de coordenadas <br>y tus claves SON personales. ¡No los compartas!
+                </p>
+
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+ -->
+<!-- 
+        <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label> -->
+
+<!-- <p>Al crear una cuenta, usted acepta los <a href="#" style="color:dodgerblue">Términos & Condiciones</a>.</p> -->
