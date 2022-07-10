@@ -31,7 +31,7 @@ body{
  }
 
 .bloque-visual{
-    background-color: azure;
+    background-color: rgba(240, 255, 255, 0.7);
     width: 800px;
     display: flex;
     flex-direction: column;
@@ -39,7 +39,7 @@ body{
     text-align: center;
     margin: auto;
     border-radius: 40px;
-    opacity: 0.85;
+    
    /*  border: 2px solid black; */
     font-family: 'Monda', sans-serif;
     border: none;
