@@ -70,12 +70,12 @@ body{
     background-color: black;
 } */
 
-#doc{
+#tipodoc{
     justify-content: space-between;
     margin-right: 20px;
 }
 
-#documentos{
+#tiposdedoc{
     margin-right: 20px;
 }
 .checkbox {
@@ -116,7 +116,7 @@ body{
     
 
 }
-#documentos, #consulta{
+#tiposdedoc, #consulta{
     width: 75px;
     height: 30px;
 /*     border-radius: 10px;
@@ -127,7 +127,7 @@ body{
     
 }
 
-#dni{
+#documento{
     margin-bottom: 20px;
 /*     border-radius: 10px;
  */    width: 400px;
@@ -269,7 +269,7 @@ align-items: center;
 
 /*TABLA*/
 
-#movimientos{
+.movimientos{
     font-family: 'Monda', sans-serif;
 }
 
@@ -286,7 +286,7 @@ table{
     width: 700px;
 
 }
-#tabla{
+#tabla-pesos, #tabla-dolares, #tabla-visa, #tabla-master{
     background-color:aliceblue;
     width: 800px;
 
@@ -301,7 +301,8 @@ td{
     color: white;
 }
 
-#solapa-h{
+.solapa-h{
+text-align: center;
     padding: 4px 0;
     background-color: #3f5f72 ;
     color: white;
@@ -323,6 +324,10 @@ nav div{
     margin: 0 10px;
 }
 
+nav div img{
+    width: 40px;
+    height: 30px;
+}
 
 nav button{
     display: flex;
@@ -378,6 +383,7 @@ nav a:hover{
 #mis-productos{
     background-color: aliceblue;
     width: 300px;
+   
 }
 
 #mis-productos ul{
@@ -387,8 +393,8 @@ nav a:hover{
 
 #mis-productos ul li{
     border-bottom: 1px solid #3683b2;
-    padding: 10px;
-}
+    padding: 10px;}
+
 
 /*centro de la pagina*/
 
@@ -405,11 +411,142 @@ nav a:hover{
     gap: 200px;
 }
 
+.menu-desplegable{
+    display: flex;
+}
+
+.tablas-desplegables{
+    display: block;
+  flex-direction: column;
+
+}
+.secciontabla{
+    visibility: hidden;
+}
+
+#caja-pesos, #caja-dolares, #tarjeta-visa, #tarjeta-master{
+    height: 50px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+footer{
+    background-color: #3f5f72;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Monda', sans-serif;
+    padding: 0 20px;
+}
+
+footer img{    
+    width: 40px;
+    height: 30px;
+    
+}
+
+.iconos-footer{
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    list-style-type: none;
+    
+}
+
+.tablas-desplegables{
+     padding-top: 150px;
+ 
+   /*  display: flex;
+    justify-items: center;
+    align-items: center; */
+/* margin: auto;
+ */
+}
+
+
+/* lo que logro gaston
+
+serv = document.getElementById("serv");
+
+function cambiarS(){
+    serv.style.visibility = "visible"
+}
+activ = document.getElementById("activ");
+
+function cambiarA(){
+    activ.style.visibility = "visible"
+}
+
+<div id="servicios">
+            <button onclick="cambiarS()">Servicios</button>
+                <ul id="serv">
+                    <li>3 canchas de Futbol 5 con cesped sintetico Forbex, <br> 1 cubierta.</li>
+                    <li>Patio con Parrilla.</li>
+                    <li>Bufet con WiFi, futbol en HD.</li>
+                    <li>Eventos y cumpleaños.</li>
+                    <li>Iluminacion.</li>
+                    <li>Vestuarios.</li>
+                    <li>Emergencia Privada.</li>
+                </ul>
+        </div>
+        <div id="actividades">
+            <button onclick="cambiarA()">Actividades</button>
+            <ul id="activ">
+                <li>Alquiler de cancha x Hora y Abonos mensuales.</li>
+                <li>Torneos Futbol “5” Femenino, Masculino y Mixto.</li>
+                <li>Entrenamientos de Futbol y Fisico recreativo y de competencia Femenino y Masculino.</li>
+                <li>Escuelas de Futbol Femenina para niñas y adolecentes. Escuelas de Futbol para Varones, niños y adolecentes.</li>
+            </ul>
+        </div>
+*/
 
 
 
 
+/* robado de bootstrap:
+Class
+.visible {
+  visibility: visible !important;
+}
+.invisible {
+  visibility: hidden !important;
+} "visibility": (
+      property: visibility,
+      class: null,
+      values: (
+        visible: visible,
+        invisible: hidden,
+      )
+    )
+    
+    visibility:hidden !important;
+*/
 
+
+
+/* video de youtube*/
+/* ----- -----  Estilos para Validacion ----- ----- */
+/* .formulario__grupo-correcto .formulario__validacion-estado {
+	color: #1ed12d;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__label {
+	color: #bb2929;
+}
+
+.formulario__grupo-incorrecto .formulario__validacion-estado {
+	color: #bb2929;
+	opacity: 1;
+}
+
+.formulario__grupo-incorrecto .formulario__input {
+	border: 3px solid #bb2929;
+}
+
+ */
 
 
 

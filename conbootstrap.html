@@ -1,26 +1,27 @@
-<!-- <!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenido al Home Banking</title>
-    <link rel="stylesheet" href="css/crear_usuario.css"> 
+   <!--  <link rel="stylesheet" href="css/crear_usuario.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
 </head>
 
 <body>
     <nav>
         <div>
-            <img src="IMAGES/logo1.svg" alt="logo">
-            <span class="bienvenido">Bienvenido </span> --> <!-- PONER UN REPLACE CON UN ALERT? -->
-        <!--     <span class="bienvenido inicio"><a href="principal2.html"> Inicio</a></span>
-            
+            <img src="IMAGES/logo1.svg" alt="">
+            <span class="bienvenido">Bienvenido </span>
+            <span class="bienvenido inicio"><a href="principal2.html"> Inicio</a></span>
+
         </div>
         <div>
             <a href="">
@@ -28,15 +29,12 @@
             </a>
             <a href="contacto.html">
                 <li>Atención al Cliente</li>
-            </a> -->
-            <!-- poner función que escriba nombre de usuario después del bienvenido. ¿Será con JS?
-        -->
-           <!-- <a href="index.html"> <button class="boton salir" type="button"> Salir </button></a>
+            </a>
+            <!-- poner función que escriba nombre de usuario después del bienvenido. ¿Será con JS?-->
+            <a href="index.html"> <button class="boton salir" type="button"> Salir </button></a>
         </div>
     </nav>
-
-    <main class="main-registro">
-        <div class="tablas-desplegables">
+    <main>
         <div class="menu-desplegable">
             <p>
                 <button id="caja-pesos" class="btn btn-primary" type="button" data-bs-toggle="collapse"
@@ -46,7 +44,7 @@
             </p>
             <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="collapseWidthExamplePesos">
-                    <div class="card card-body"></div> style="width: 300px;" -->
+                    <div class="card card-body"></div> <!-- style="width: 300px;" -->
                     <section id="tabla-pesos">
                         <table class="movimientos">
                             <thead>
@@ -54,9 +52,9 @@
                                     <th class="solapa-h" colspan="3">Últimos Movimientos</th>
                                 </tr>
                                 <tr>
-                                    <th id="fechaPesos" class="encabezado">Fecha de la transacción </th>
-                                    <th id="descripcionPesos" class="encabezado">Descripción</th>
-                                    <th id="montoPesos" class="encabezado">Monto</th>
+                                    <th class="encabezado">Fecha de la transacción </th>
+                                    <th class="encabezado">Descripción</th>
+                                    <th class="encabezado">Monto</th>
                                 </tr>
                             </thead>
                             <tbody class="cuerpo-de-tabla">
@@ -108,7 +106,7 @@
             </p>
             <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="collapseWidthExampleDolares">
-                    <div class="card card-body"></div>  style="width: 300px;" -->
+                    <div class="card card-body"></div> <!-- style="width: 300px;" -->
                     <section id="tabla-dolares">
                         <table class="movimientos">
                             <thead>
@@ -116,9 +114,9 @@
                                     <th class="solapa-h" colspan="3">Últimos Movimientos</th>
                                 </tr>
                                 <tr>
-                                    <th id="fechaDolar" class="encabezado">Fecha de la transacción </th>
-                                    <th id="descripcionDolar" class="encabezado">Descripción</th>
-                                    <th id="montoDolar" class="encabezado">Monto</th>
+                                    <th class="encabezado">Fecha de la transacción </th>
+                                    <th class="encabezado">Descripción</th>
+                                    <th class="encabezado">Monto</th>
                                 </tr>
                             </thead>
                             <tbody class="cuerpo-de-tabla">
@@ -170,7 +168,7 @@
             </p>
             <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="collapseWidthExampleVisa">
-                    <div class="card card-body"></div>  style="width: 300px;" -->
+                    <div class="card card-body"></div> <!-- style="width: 300px;" -->
                     <section id="tabla-visa">
                         <table class="movimientos">
                             <thead>
@@ -178,9 +176,9 @@
                                     <th class="solapa-h" colspan="3">Últimos Movimientos</th>
                                 </tr>
                                 <tr>
-                                    <th id="fechaVisa" class="encabezado">Fecha de la transacción </th>
-                                    <th id="descripcionVisa" class="encabezado">Descripción</th>
-                                    <th id="montoVisa" class="encabezado">Monto</th>
+                                    <th class="encabezado">Fecha de la transacción </th>
+                                    <th class="encabezado">Descripción</th>
+                                    <th class="encabezado">Monto</th>
                                 </tr>
                             </thead>
                             <tbody class="cuerpo-de-tabla">
@@ -232,17 +230,17 @@
             </p>
             <div style="min-height: 120px;">
                 <div class="collapse collapse-horizontal" id="collapseWidthExampleMaster">
-                    <div class="card card-body"></div>  style="width: 300px;" -->
-              <!--       <section id="tabla-master">
+                    <div class="card card-body"></div> <!-- style="width: 300px;" -->
+                    <section id="tabla-master">
                         <table class="movimientos">
                             <thead>
                                 <tr>
                                     <th class="solapa-h" colspan="3">Últimos Movimientos</th>
                                 </tr>
                                 <tr>
-                                    <th id="fechaMaster" class="encabezado">Fecha de la transacción </th>
-                                    <th id="descripcionMaster" class="encabezado">Descripción</th>
-                                    <th id="montoMaster" class="encabezado">Monto</th>
+                                    <th class="encabezado">Fecha de la transacción </th>
+                                    <th class="encabezado">Descripción</th>
+                                    <th class="encabezado">Monto</th>
                                 </tr>
                             </thead>
                             <tbody class="cuerpo-de-tabla">
@@ -253,7 +251,7 @@
                                 </tr>
                                 <tr>
                                     <td>14 Junio 2022</td> datos de las celdas -->
-                                   <!-- <td>Fábrica de Pastas</td>
+                                    <td>Fábrica de Pastas</td>
                                     <td>$ 2300,00</td>
                                 </tr>
                                 <tr>
@@ -276,7 +274,7 @@
                                     <td>COTO</td>
                                     <td>$ 11870,94</td>
                                 </tr> -->
-                           <!-- </tbody>
+                            </tbody>
                         </table>
 
                     </section>
@@ -286,47 +284,16 @@
         
         </div>
         
-    </div>
 
-        
-        
-        
-        <div id="slider"></div>
-        </div>
     </main>
 
-    <footer>
-        <div>
-        <img src="IMAGES/logo1.svg" alt="logo">
-        </div>
-        <div><ul class="iconos-footer">
-            <li>
-                <a href="https:www.google.com/" target="_blank">
-                    <img  src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_googleplus-128.png"
-                    alt="icono de gmail"></a>
-            </li>
-    
-            <li> <a href="https:www.instagram.com/" target="_blank">
-                     <img  src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_instagram-128.png"
-                    alt="icono de instagram"></a>
-            </li>
-    
-            <li> <a href="https:www.facebook.com/" target="_blank">
-                    <img src="https://cdn3.iconfinder.com/data/icons/2018-social-media-logotypes/1000/2018_social_media_popular_app_logo_facebook-128.png"
-                    alt="icono de facebook"></a>
-            </li>
-        </ul>
-    </div>
-    <div>
-        <span>© 2022 All rights reserved.</span>
-    </div>
 
-    </footer>
+
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
-    crossorigin="anonymous"></script>
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
 
 </body>
 
-
-</html> -->
+</html>

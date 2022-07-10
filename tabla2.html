@@ -6,62 +6,153 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tabla</title>
-     <link rel="stylesheet" href="css/crear_usuario.css">
+    <link rel="stylesheet" href="css/crear_usuario.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
 
+   
 </head>
 
 <body>
-    <table id="movimientos">
-        <thead>
-        <tr>
-            <th id="solapa-h" colspan="3">Últimos Movimientos</th>
-            <!-- colspan unifica las celdas y los numeros indican cuantas celdas hay que unificar -->
-        </tr>
-    
-        <tr>
-            <!-- nombres de las columnas -->
-            <th class="encabezado">Fecha de la transacción </th>
-            <th class="encabezado">Descripción</th>
-            <th class="encabezado">Monto</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>18 Junio 2022</td>
-            <td>Compra Carrefour presencial</td>
-            <td>$ 1946,33</td>
-        </tr>
-        <tr>
-            <td>14 Junio 2022</td> <!--  datos de las celdas -->
-            <td>Fábrica de Pastas</td>
-            <td>$ 2300,00</td>
-        </tr>
-        <tr>
-            <td>13 Junio 2022</td>
-            <td>Verdulería</td>
-            <td>$ 750,20</td>
-        </tr>
-        <tr>
-            <td>11 Junio 2022</td>
-            <td>Farmacity</td>
-            <td>$ 6900,00</td>
-        </tr>
-        <tr>
-            <td>11 Junio 2022</td>
-            <td>Fiambrería Los Hermanos SRL</td>
-            <td>$ 1450,00</td>
-        </tr>
-        <tr>
-            <td>9 Junio 2022</td>
-            <td>COTO</td>
-            <td>$ 11870,94</td>
-        </tr>
-    </tbody>
-    </table>
+    <div id="tabla-de-prueba">
+        <button  onclick="cajainvisible('cuerpoDeTablaDePrueba')"  id="cajita"> Movimientos</button>
+        <table id="cuerpoDeTablaDePrueba">
+            <thead>
+                <tr>
+                    <th class="solapa-h" colspan="3">Últimos Movimientos</th>
+                    <!-- colspan unifica las celdas y los numeros indican cuantas celdas hay que unificar -->
+                </tr>
 
+                <tr> 
+                    <!-- nombres de las columnas -->
+                    <th class="encabezado">Fecha de la transacción </th>
+                    <th class="encabezado">Descripción</th>
+                    <th class="encabezado">Monto</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>18 Junio 2022</td>
+                    <td>Compra Carrefour presencial</td>
+                    <td>$ 1946,33</td>
+                </tr>
+                <tr>
+                    <td>14 Junio 2022</td> 
+                    <!--  datos de las celdas -->
+                    <td>Fábrica de Pastas</td>
+                    <td>$ 2300,00</td>
+                </tr>
+                <tr>
+                    <td>13 Junio 2022</td>
+                    <td>Verdulería</td>
+                    <td>$ 750,20</td>
+                </tr>
+                <tr>
+                    <td>11 Junio 2022</td>
+                    <td>Farmacity</td>
+                    <td>$ 6900,00</td>
+                </tr>
+                <tr>
+                    <td>11 Junio 2022</td>
+                    <td>Fiambrería Los Hermanos SRL</td>
+                    <td>$ 1450,00</td>
+                </tr>
+                <tr>
+                    <td>9 Junio 2022</td>
+                    <td>COTO</td>
+                    <td>$ 11870,94</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+    <div id="tabla-de-prueba">
+        <button  onclick="cajainvisible('tablaPruebaDos')"  id="cajita"> Movimientos</button>
+        <table id="tablaPruebaDos">
+            <thead>
+                <tr>
+                    <th class="solapa-h" colspan="3">Últimos Movimientos</th>
+                    <!-- colspan unifica las celdas y los numeros indican cuantas celdas hay que unificar -->
+                </tr>
+
+                <tr> 
+                    <!-- nombres de las columnas -->
+                    <th class="encabezado">Fecha de la transacción </th>
+                    <th class="encabezado">Descripción</th>
+                    <th class="encabezado">Monto</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>18 Junio 2022</td>
+                    <td>Compra Carrefour presencial</td>
+                    <td>$ 1946,33</td>
+                </tr>
+                <tr>
+                    <td>14 Junio 2022</td> 
+                    <!--  datos de las celdas -->
+                    <td>Fábrica de Pastas</td>
+                    <td>$ 2300,00</td>
+                </tr>
+                <tr>
+                    <td>13 Junio 2022</td>
+                    <td>Verdulería</td>
+                    <td>$ 750,20</td>
+                </tr>
+                <tr>
+                    <td>11 Junio 2022</td>
+                    <td>Farmacity</td>
+                    <td>$ 6900,00</td>
+                </tr>
+                <tr>
+                    <td>11 Junio 2022</td>
+                    <td>Fiambrería Los Hermanos SRL</td>
+                    <td>$ 1450,00</td>
+                </tr>
+                <tr>
+                    <td>9 Junio 2022</td>
+                    <td>COTO</td>
+                    <td>$ 11870,94</td>
+                </tr>
+
+            </tbody>
+        </table>
+
+    </div>
+
+
+
+    <!--  <div id="servicios">
+        <button onclick="cambiarS()">Servicios</button>
+            <ul id="serv">
+                <li>3 canchas de Futbol 5 con cesped sintetico Forbex, <br> 1 cubierta.</li>
+                <li>Patio con Parrilla.</li>
+                <li>Bufet con WiFi, futbol en HD.</li>
+                <li>Eventos y cumpleaños.</li>
+                <li>Iluminacion.</li>
+                <li>Vestuarios.</li>
+                <li>Emergencia Privada.</li>
+            </ul>
+    </div>
+    <div id="actividades">
+        <button onclick="cambiarA()">Actividades</button>
+        <ul id="activ">
+            <li>Alquiler de cancha x Hora y Abonos mensuales.</li>
+            <li>Torneos Futbol “5” Femenino, Masculino y Mixto.</li>
+            <li>Entrenamientos de Futbol y Fisico recreativo y de competencia Femenino y Masculino.</li>
+            <li>Escuelas de Futbol Femenina para niñas y adolecentes. Escuelas de Futbol para Varones, niños y adolecentes.</li>
+        </ul>
+    </div>
+     -->
+
+
+
+    <script src="js/main.js"></script>
 </body>
 
 </html>
