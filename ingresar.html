@@ -17,17 +17,16 @@
     <main class="main-registro">
         <div class="bloque-visual">
             <h1> BIENVENIDO </h1><br>
-            <form action="https://postman-echo.com/post" method="post">
+            <form action="https://postman-echo.com/post" method="post" >
                 <label for="usuario"> Usuario: </label>
-                <input id="usuario" type="number" maxlength="25" placeholder="  Su usuario es su DNI" name="usuario"
-                    required>
+                <input onchange="validarTiempoReal(event,['usuario'])" id="usuario" type="text" maxlength="25"
+                    placeholder="  Su usuario es su DNI" name="usuario" required>
                 <br> <br>
                 <label for="pass-ingreso">Contraseña: </label>
-                <input id="pass-ingreso" type="password"
-                    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" name="pass-ingreso"
-                    placeholder="  Ingrese su contraseña" required>
+                <input oninput="validarTiempoReal(event,['pass-ingreso'])" id="pass-ingreso" type="password" name="pass-ingreso" placeholder=" Ingrese su contraseña"
+                    required oninvalid="this.setCustomValidity('La contraseña debe contener como mínimo 8 caracteres, de los cuales al menos: una mayúscula, un número, y minusculas')"  onfocus="validarTiempoReal(event,['pass-ingreso'])">
 
-                <p id="contras"> (La contraseña debe contener como mínimo 8 caracteres, de los cuales al menos: <br> una mayúscula, un número, un carácter especial y minusculas)</p>
+                <p id="contras"> (La contraseña debe contener como mínimo 8 caracteres, de los cuales al menos: una mayúscula, un número, y minusculas)</p>
                 <br><br>
                 <div class="checkbox">
                     <input id="remember" type="checkbox" checked="checked" name="remember">
@@ -35,8 +34,9 @@
                     <br> <br>
                 </div>
                 <div>
-                    <button  type="submit" class="boton ingresar">Ingresar</button><br><br>
-                    <p id="olvido-contrasenia">¿Olvidó su contraseña? haga click <a href="olvido_contras.html">aquí</a></p><br>
+                    <button onclick="validarTiempoReal(event, ['usuario', 'pass-ingreso'])" name="submit" id="submit" class="boton ingresar" type="submit" > Ingresar</button>
+                    <p id="olvido-contrasenia">¿Olvidó su contraseña? haga click <a href="olvido_contras.html">aquí</a>
+                    </p><br>
                     <p id="no-registrado">¿No está registrado? haga click <a href="crear_usuario.html">aquí</a></p><br>
                 </div>
             </form>
@@ -46,11 +46,10 @@
                 <p>Los datos de cuenta, Token de seguridad, <br> los datos de tus tarjetas, de tu tarjeta de coordenadas
                     <br>y tus claves SON personales. ¡No los compartas!
                 </p>
-
             </div>
         </div>
     </main>
-
+    <script src="js/main.js"></script>
 </body>
 
 </html>
