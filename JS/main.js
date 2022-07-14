@@ -7,17 +7,23 @@ let button = document.getElementById("cajita")
  */
 let cajita = 0;
 
+let idBotonActivo = "caja-pesos"
 
+function cajainvisible(boton, id) {
+    
+    const botonPrevio = document.getElementById(idBotonActivo)
+    botonPrevio.className = botonPrevio.className.replace(' active','')
 
-function cajainvisible(id) {
+    idBotonActivo = boton.id
+
+    boton.className += ' active';
+    
     const tablas = document.getElementsByClassName("secciontabla")
     for (let i = 0; i < tablas.length; i++) {
-        console.log(tablas[i]);
         tablas[i].style.display = "none"
     }
 
     const caja = document.getElementById(id)
-    console.log(caja.style.display);
     if (caja.style.display === "none" || !caja.style.display) {
         caja.style.display = "flex";
     } else {

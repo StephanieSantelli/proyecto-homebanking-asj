@@ -165,7 +165,29 @@ button{
     text-align: center;
     display: flex;
     justify-content: center;
+    position: relative;
+    transition: 0.25s;
 }
+
+.botonmov:hover, .boton:focus{
+    border-bottom:#3683b2 solid 1px;
+    color: #fff;
+    box-shadow: inset 200px 0 0 0 #3683b2;
+}
+
+.botonmov.active::before{
+    content: '';
+    width: 2px;
+    height: 40px;
+    right: -50px;
+    position: absolute;
+    border-left: 30px solid rgba(240, 255, 255, 0.7);
+    border-top: 20px solid rgba(0,0,0,0);
+    border-bottom: 20px solid rgba(0,0,0,0);
+    outline: 2px 0 2px 0 black;
+
+}
+
 .todosLosBotones{
     background-color: rgba(240, 255, 255, 0.7);
     box-shadow: 0 0 10px 0 black;
@@ -447,6 +469,10 @@ nav a:hover{
 
 /* formulario contacto*/
 
+#comentarios{
+    padding: 10px 15px;
+}
+
 #email-contacto{
     display: flex;
     justify-content: center;
@@ -501,11 +527,14 @@ nav a:hover{
 }
 
 .tablas-desplegables{
-   display: flex;
-  flex-direction: row;
-    margin: 30px auto;
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin: 50px auto;
     gap: 40px;
     padding-top: 150px;
+    min-height: 700px;
 }
 
 #caja-pesos, #caja-dolares, #tarjeta-visa, #tarjeta-master{
@@ -551,8 +580,6 @@ footer img{
 height: 350px;
 margin: auto;
 margin-bottom: 50px;
-
-
 }
 
 .slider{
@@ -560,6 +587,7 @@ margin-bottom: 50px;
     position: relative;
     padding: 0;
     height: 300px;
+    box-shadow: 0 0 5px 0 #444;
     }
 
 .diapos {
