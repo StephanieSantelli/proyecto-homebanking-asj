@@ -101,7 +101,7 @@ function validarFormulario(e){
 function validarTiempoReal(e, ids) {
 
     const diccionarioExpresionRegular = {
-        "usuario": /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+        "usuario": /^\d{7,25}$/,
         "pass-ingreso": /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
         "nombre": /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
         "apellido": /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
@@ -110,7 +110,7 @@ function validarTiempoReal(e, ids) {
         "email": /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
         "password": /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
         "psw-repeat": /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/,
-        "usuario2": /^[a-zA-ZÀ-ÿ\s]{1,40}$/,
+        "usuario2": /^\d{7,25}$/,
         "email2": /^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$/,
     }
     for (let i = 0; i < ids.length; i++) {

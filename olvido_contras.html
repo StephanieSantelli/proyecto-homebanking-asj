@@ -10,7 +10,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fascinate&family=Monda&display=swap" rel="stylesheet">
-
 </head>
 
 <body>
@@ -19,26 +18,27 @@
             <h1> RECUPERE SU CONTRASEÑA </h1><br>
             <form action=" " method=" ">
                 <div id="formulario-olvido-contras">
-                    <label for="usuario2"> <b>Usuario: </b> </label>
-                    <input id="usuario2" type="number" maxlength="25" placeholder="  Su usuario es su DNI"
-                        name="usuario" required>
+                    <label for="usuario2"> Usuario: </label>
+                    <input onchange="validarTiempoReal(event,['usuario2'])" id="usuario2" type="number" maxlength="25"
+                        placeholder="  Su usuario es su DNI" name="usuario2" required>
                     <br> <br>
-                    <label for="email2"><b>Email: </b></label>
-                    <input id="email2" type="email" name="email2" placeholder="  Ingrese su correo electrónico"
-                        required>
+                    <label for="email2">Email:</label>
+                    <input onchange="validarTiempoReal(event,['email2'])" id="email2" type="email" name="email2"
+                        placeholder="  Ingrese su correo electrónico" required>
                 </div>
 
-                
-                <a href="correo_enviado.html"> <button type="button" class="boton cliente">Recuperar
+                <a href="correo_enviado.html"> <button onclick="validarTiempoReal(event, ['usuario2', 'email2'])"
+                        type="button" class="boton cliente">Recuperar
                     </button></a><br><br>
 
-                <!--  <script src="/JS/main.js"></script> -->
-
-
+                    <p id="no-registrado">¿No está registrado? haga click <a href="crear_usuario.html">aquí</a></p>
+                    <p id="preguntaregistro">¿Ya estás registrado? <a href="ingresar.html">Click aquí</a></p>
             </form>
         </div>
     </main>
 
+
+    <script src="/JS/main.js"></script>
 </body>
 
 </html>
