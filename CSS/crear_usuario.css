@@ -161,7 +161,7 @@ button{
     color: #3683b2;
     font-weight: bold;
     border-bottom: 1px solid #3f5f72 ;
-    width: 200px;
+    width: 250px;
     text-align: center;
     display: flex;
     justify-content: center;
@@ -172,7 +172,7 @@ button{
 .botonmov:hover, .boton:focus{
     border-bottom:#3683b2 solid 1px;
     color: #fff;
-    box-shadow: inset 200px 0 0 0 #3683b2;
+    box-shadow: inset 250px 0 0 0 #3683b2;
 }
 
 .botonmov.active::before{
@@ -181,7 +181,7 @@ button{
     height: 40px;
     right: -50px;
     position: absolute;
-    border-left: 30px solid rgba(240, 255, 255, 0.7);
+    border-left: 30px solid rgba(240, 255, 255, 0.9);
     border-top: 20px solid rgba(0,0,0,0);
     border-bottom: 20px solid rgba(0,0,0,0);
     outline: 2px 0 2px 0 black;
@@ -189,9 +189,9 @@ button{
 }
 
 .todosLosBotones{
-    background-color: rgba(240, 255, 255, 0.7);
+    background-color: rgba(240, 255, 255, 0.9);
     box-shadow: 0 0 10px 0 black;
-    height: 230px;
+    height: 280px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -541,7 +541,7 @@ nav a:hover{
     height: 50px;
     display: flex;
     align-items: center;
-    font-size: 12px;
+    font-size: 15px;
 }
 
 footer{
@@ -705,251 +705,3 @@ transition: background-color 0.6s ease;
 
 
 
-
- 
-   /*  display: flex;
-    justify-items: center;
-    align-items: center; */
-/* margin: auto;
- */
-
-
-
-/* lo que logro gaston
-
-serv = document.getElementById("serv");
-
-function cambiarS(){
-    serv.style.visibility = "visible"
-}
-activ = document.getElementById("activ");
-
-function cambiarA(){
-    activ.style.visibility = "visible"
-}
-
-<div id="servicios">
-            <button onclick="cambiarS()">Servicios</button>
-                <ul id="serv">
-                    <li>3 canchas de Futbol 5 con cesped sintetico Forbex, <br> 1 cubierta.</li>
-                    <li>Patio con Parrilla.</li>
-                    <li>Bufet con WiFi, futbol en HD.</li>
-                    <li>Eventos y cumpleaños.</li>
-                    <li>Iluminacion.</li>
-                    <li>Vestuarios.</li>
-                    <li>Emergencia Privada.</li>
-                </ul>
-        </div>
-        <div id="actividades">
-            <button onclick="cambiarA()">Actividades</button>
-            <ul id="activ">
-                <li>Alquiler de cancha x Hora y Abonos mensuales.</li>
-                <li>Torneos Futbol “5” Femenino, Masculino y Mixto.</li>
-                <li>Entrenamientos de Futbol y Fisico recreativo y de competencia Femenino y Masculino.</li>
-                <li>Escuelas de Futbol Femenina para niñas y adolecentes. Escuelas de Futbol para Varones, niños y adolecentes.</li>
-            </ul>
-        </div>
-*/
-
-
-
-
-/* robado de bootstrap:
-Class
-.visible {
-  visibility: visible !important;
-}
-.invisible {
-  visibility: hidden !important;
-} "visibility": (
-      property: visibility,
-      class: null,
-      values: (
-        visible: visible,
-        invisible: hidden,
-      )
-    )
-    
-    visibility:hidden !important;
-*/
-
-
-
-/* video de youtube*/
-/* ----- -----  Estilos para Validacion ----- ----- */
-/* .formulario__grupo-correcto .formulario__validacion-estado {
-	color: #1ed12d;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__label {
-	color: #bb2929;
-}
-
-.formulario__grupo-incorrecto .formulario__validacion-estado {
-	color: #bb2929;
-	opacity: 1;
-}
-
-.formulario__grupo-incorrecto .formulario__input {
-	border: 3px solid #bb2929;
-}
-
- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  #registro{
-    text-align: justify;
-    display: flex;
-    flex-wrap: wrap;
-    width: 400px;
- } */
-
-/*  #registro{
-    width: 800px;
-    display: flex;
-    flex-direction: column;
- }
-
- #registro div{
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
- } */
-/* 
-form{
-    display: table;
-
-}
-form div{
-    display: table-row;
-}
-form label{
-    display: table-cell;
-    text-align: left;
-}
-form input{
-    display: table-cell;
-    
-}
-#doc{
-    display: flex;
-    justify-content: space-between;
-}
-#doc input{
-    display: flex;
-} */
-
-
-
-
-/* 
-*{  margin: 0;
-    padding: 0;
-    box-sizing: border-box;}
-
-    
-body{
-    background-color: rgb(222, 190, 252);  */
-/*     display: flex;
- */  /*   height: 50vh; */
-/*  }  
-#bloque-visual p{
-    padding: 20px;
-}
-
-#crear-usuario{
-    font-family: 'Fascinate', cursive;
-
-}
-input::-webkit-outer-spin-button,
-input::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-}
-h1{
-    font-family: 'Fascinate', cursive;
-}
-#main-registro {
-    width: 800px;
-    text-align: center; 
-    background-color:azure;
-    margin: auto;
-    display: flex;
-}
-
-label{
-    margin: 100px;
-    padding: 150px;
-}
-#documentos{
-    height: 30px;
-} 
-#documento{
-    width: 55%;
-}
-
-input{
-    width: 65%;
-    height: 30px;
-}
-
-.recordar{
-    margin: 1px;
-    padding: 1px;
-    
-} 
-#remember{
-   width: 5%;
-    height: 15px;
-}
-
-#aviso-token{
-    border: 4px solid ;
-    margin-left: 200px;
-    margin-right: 200px;
-    padding-top: 15px;
-}   
-
- */
-
-
-
-
-
-
-
-
-/* #aviso-token{
-    border: 2px solid black; 
-    min-width: 350px;
-    display:grid;
-    grid-template-columns: 1fr 5fr;
-    padding: 10px;
-    margin: 0px 30px;
-}
-#aviso-token p{
-    text-align: center;
-    display: flex;
-}
-#aviso-token img{
-    margin: auto;
-}
- */
